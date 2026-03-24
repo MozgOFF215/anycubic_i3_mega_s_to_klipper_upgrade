@@ -11,3 +11,6 @@ Desktop.ini
 *.bak
 *.log
 *~
+
+# Custom files
+add_context/**
