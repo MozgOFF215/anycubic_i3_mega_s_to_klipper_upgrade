@@ -1,0 +1,16 @@
+G92 E0
+G1 E-1.0 F2100 ; small retract
+
+; lift and park
+G1 Z10 F1800
+G1 X0 Y180 F6000
+
+M107 ; part cooling fan off
+TURN_OFF_HEATERS
+
+; end beep
+M300 S1800 P150
+M300 S1400 P150
+M300 S2200 P220
+
+M84 ; disable motors
