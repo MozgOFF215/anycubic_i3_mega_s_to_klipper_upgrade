@@ -1,7 +1,4 @@
 {
-    "filament_extruder_variant": [
-        "Direct Drive Standard"
-    ],
     "filament_settings_id": [
         "Anycubic Generic PLA - klipper"
     ],
