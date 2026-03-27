@@ -1,8 +1,10 @@
 G92 E0
 G1 E-1.0 F2100 ; small retract
 
-; lift and park
+; safe lift and park
+G91
 G1 Z10 F1800
+G90
 G1 X0 Y180 F6000
 
 M107 ; part cooling fan off
