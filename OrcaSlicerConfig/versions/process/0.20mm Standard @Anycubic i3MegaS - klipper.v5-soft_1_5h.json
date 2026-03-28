@@ -1,0 +1,28 @@
+﻿{
+    "default_acceleration": "1200",
+    "from": "User",
+    "inherits": "0.20mm Standard @Anycubic i3MegaS",
+    "initial_layer_speed": "25",
+    "inner_wall_acceleration": "1600",
+    "inner_wall_speed": "65",
+    "internal_solid_infill_acceleration": "1400",
+    "internal_solid_infill_speed": "60",
+    "name": "0.20mm Standard @Anycubic i3MegaS - klipper",
+    "outer_wall_acceleration": "900",
+    "outer_wall_speed": "35",
+    "print_extruder_id": [
+        "1"
+    ],
+    "print_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "print_settings_id": "0.20mm Standard @Anycubic i3MegaS - klipper",
+    "sparse_infill_acceleration": "1600",
+    "sparse_infill_speed": "80",
+    "seam_position": "rear",
+    "top_surface_acceleration": "1000",
+    "top_surface_speed": "30",
+    "travel_acceleration": "1800",
+    "travel_speed": "150",
+    "version": "2.3.2.60"
+}
