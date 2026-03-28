@@ -8,5 +8,8 @@
     "from": "User",
     "inherits": "Anycubic Generic PLA",
     "name": "Anycubic Generic PLA - klipper",
+    "slow_down_layer_time": [
+        "12"
+    ],
     "version": "2.3.2.60"
 }

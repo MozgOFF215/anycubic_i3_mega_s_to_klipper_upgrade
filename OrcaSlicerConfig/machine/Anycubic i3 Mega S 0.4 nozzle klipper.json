@@ -43,7 +43,7 @@
     ],
     "printer_settings_id": "Anycubic i3 Mega S 0.4 nozzle klipper",
     "retraction_length": [
-        "4"
+        "4.5"
     ],
     "retraction_speed": [
         "35"
