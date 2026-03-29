@@ -87,3 +87,7 @@ Each version has 3 files (`process`, `machine`, `filament`) with version in file
 
 - `cf6b53d`: set `pressure_advance: 0.22` and `square_corner_velocity: 5.0` in `config/printer.cfg`
 
+## Safety Harmonization Note
+
+- On 2026-03-29, machine snapshots `v1`, `v2`, `v3` were updated to use the same safe end gcode lift as later versions (`G91 -> G1 Z10 -> G90`) to prevent nozzle collision with tall prints.
+- On 2026-03-29, machine snapshots `v1` and `v2` were updated with `print_host: "192.168.178.48"` so all `v1..v6` machine snapshots now match `v6` for all `*_gcode` fields and `print_host`.
