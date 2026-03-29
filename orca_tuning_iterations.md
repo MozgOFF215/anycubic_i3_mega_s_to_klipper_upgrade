@@ -33,6 +33,18 @@ Each version has 3 files (`process`, `machine`, `filament`) with version in file
 - `OrcaSlicerConfig/versions/process/0.20mm Standard @Anycubic i3MegaS - klipper.v4-quality_pass.json`
 - `OrcaSlicerConfig/versions/process/0.20mm Standard @Anycubic i3MegaS - klipper.v5-soft_1_5h.json`
 - `OrcaSlicerConfig/versions/process/0.20mm Standard @Anycubic i3MegaS - klipper.v6-target_1h30.json`
+- `OrcaSlicerConfig/versions/process/0.15mm Balanced @Anycubic i3MegaS - klipper.v3-orca_normalized.json`
+- `OrcaSlicerConfig/versions/process/0.15mm Balanced @Anycubic i3MegaS - klipper.v4-quality_pass.json`
+- `OrcaSlicerConfig/versions/process/0.15mm Balanced @Anycubic i3MegaS - klipper.v5-soft_1_5h.json`
+- `OrcaSlicerConfig/versions/process/0.15mm Balanced @Anycubic i3MegaS - klipper.v6-target_1h30.json`
+- `OrcaSlicerConfig/versions/process/0.10mm Quality @Anycubic i3MegaS - klipper.v3-orca_normalized.json`
+- `OrcaSlicerConfig/versions/process/0.10mm Quality @Anycubic i3MegaS - klipper.v4-quality_pass.json`
+- `OrcaSlicerConfig/versions/process/0.10mm Quality @Anycubic i3MegaS - klipper.v5-soft_1_5h.json`
+- `OrcaSlicerConfig/versions/process/0.10mm Quality @Anycubic i3MegaS - klipper.v6-target_1h30.json`
+- `OrcaSlicerConfig/versions/process/0.30mm Draft @Anycubic i3MegaS - klipper.v3-orca_normalized.json`
+- `OrcaSlicerConfig/versions/process/0.30mm Draft @Anycubic i3MegaS - klipper.v4-quality_pass.json`
+- `OrcaSlicerConfig/versions/process/0.30mm Draft @Anycubic i3MegaS - klipper.v5-soft_1_5h.json`
+- `OrcaSlicerConfig/versions/process/0.30mm Draft @Anycubic i3MegaS - klipper.v6-target_1h30.json`
 
 ### Machine
 
@@ -91,3 +103,36 @@ Each version has 3 files (`process`, `machine`, `filament`) with version in file
 
 - On 2026-03-29, machine snapshots `v1`, `v2`, `v3` were updated to use the same safe end gcode lift as later versions (`G91 -> G1 Z10 -> G90`) to prevent nozzle collision with tall prints.
 - On 2026-03-29, machine snapshots `v1` and `v2` were updated with `print_host: "192.168.178.48"` so all `v1..v6` machine snapshots now match `v6` for all `*_gcode` fields and `print_host`.
+
+## Layer-Specific Process Variants (v6-based)
+
+- `OrcaSlicerConfig/process/0.15mm Balanced @Anycubic i3MegaS - klipper.json`
+- `OrcaSlicerConfig/process/0.10mm Quality @Anycubic i3MegaS - klipper.json`
+- `OrcaSlicerConfig/process/0.30mm Draft @Anycubic i3MegaS - klipper.json`
+
+### 0.15mm Balanced
+
+- Purpose: balanced quality/speed between 0.10 and 0.20.
+- Base: inherits from `0.20mm Standard @Anycubic i3MegaS - klipper`.
+- Key values: layer `0.15`, outer `33`, inner `50`, sparse infill `62`, top `26`, travel `125`.
+
+### 0.10mm Quality
+
+- Purpose: better surface finish and fine detail.
+- Base: inherits from `0.20mm Standard @Anycubic i3MegaS - klipper`.
+- Key values: layer `0.10`, outer `30`, inner `45`, sparse infill `55`, top `24`, travel `120`.
+
+### 0.30mm Draft
+
+- Purpose: faster draft prints with thicker layers.
+- Base: inherits from `0.20mm Standard @Anycubic i3MegaS - klipper`.
+- Key values: layer `0.30`, outer `35`, inner `58`, sparse infill `75`, top `26`, travel `135`.
+
+### Layer Variant Availability by Version
+
+| Version | 0.10 Quality | 0.15 Balanced | 0.30 Draft |
+|---|---|---|---|
+| `v3-orca_normalized` | available | available | available |
+| `v4-quality_pass` | available | available | available |
+| `v5-soft_1_5h` | available | available | available |
+| `v6-target_1h30` | available | available | available |
