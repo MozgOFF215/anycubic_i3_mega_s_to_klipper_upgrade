@@ -9,6 +9,8 @@ This repository collects notes and reference materials for migrating an Anycubic
 - `backup_marlin.txt` - captured Marlin firmware and `M503` output.
 - `emmc_migration_orangepi_en.md` - step-by-step guide to migrate Armbian from microSD to eMMC.
 - `emmc_migration_orangepi_ru.md` - русская инструкция по переносу Armbian с microSD на eMMC.
+- `reboot_poweroff_fix_orangepi_en.md` - troubleshooting and fix for reboot/poweroff issues on Orange Pi.
+- `reboot_poweroff_fix_orangepi_ru.md` - инструкция по диагностике и исправлению проблем reboot/poweroff на Orange Pi.
 
 ## Goal
 
