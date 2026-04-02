@@ -11,6 +11,8 @@ This repository collects notes and reference materials for migrating an Anycubic
 - `emmc_migration_orangepi_ru.md` - русская инструкция по переносу Armbian с microSD на eMMC.
 - `reboot_poweroff_fix_orangepi_en.md` - troubleshooting and fix for reboot/poweroff issues on Orange Pi.
 - `reboot_poweroff_fix_orangepi_ru.md` - инструкция по диагностике и исправлению проблем reboot/poweroff на Orange Pi.
+- `camera_fix_crowsnest_after_kernel_switch_en.md` - camera recovery steps when crowsnest/ustreamer fails after kernel switch.
+- `camera_fix_crowsnest_after_kernel_switch_ru.md` - фикс камеры при ошибке crowsnest/ustreamer после смены ядра.
 
 ## Goal
 
