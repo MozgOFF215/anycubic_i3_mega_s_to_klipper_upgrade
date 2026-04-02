@@ -7,6 +7,8 @@ This repository collects notes and reference materials for migrating an Anycubic
 - `marlin_backup_guide_anycubic_i_3_mega_s_via_orange_pi.md` - guide for backing up current Marlin settings before migration.
 - `printer_cfg_guide.md` - draft `printer.cfg` reference for Klipper on the Anycubic i3 Mega S.
 - `backup_marlin.txt` - captured Marlin firmware and `M503` output.
+- `emmc_migration_orangepi_en.md` - step-by-step guide to migrate Armbian from microSD to eMMC.
+- `emmc_migration_orangepi_ru.md` - русская инструкция по переносу Armbian с microSD на eMMC.
 
 ## Goal
 
