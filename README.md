@@ -13,6 +13,8 @@ This repository collects notes and reference materials for migrating an Anycubic
 - `reboot_poweroff_fix_orangepi_ru.md` - Russian troubleshooting guide for reboot/poweroff issues on Orange Pi.
 - `camera_fix_crowsnest_after_kernel_switch_en.md` - camera recovery steps when crowsnest/ustreamer fails after kernel switch.
 - `camera_fix_crowsnest_after_kernel_switch_ru.md` - Russian camera fix guide for crowsnest/ustreamer after kernel switch.
+- `timer_too_close_single_cpu_fix_orangepi_en.md` - fix for Klipper `Timer too close` caused by one-CPU host state on Orange Pi.
+- `timer_too_close_single_cpu_fix_orangepi_ru.md` - Russian troubleshooting guide for `Timer too close` and single-CPU issue on Orange Pi.
 - `tailscale_orangepi_setup_en.md` - Tailscale setup guide for remote access to Mainsail and camera.
 - `tailscale_orangepi_setup_ru.md` - Russian Tailscale setup guide for Mainsail and camera.
 - `smart_plug_setup_smartlife_ru_en.md` - bilingual Smart Life smart plug setup notes.
